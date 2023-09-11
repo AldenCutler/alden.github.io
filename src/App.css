@@ -1,5 +1,119 @@
+.download-button {
+  background-color: #383c44;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: calc(10px + 1vmin);
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  margin: 1rem;
+  box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.download-button:hover {
+  background-color: #61dafb;
+  transition: 0.5s;
+}
+
+
+.navbar {
+  background-color: #282c34;
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-item {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  font-size: calc(10px + 1vmin);
+}
+
+.nav-item:hover {
+  background-color: #383c44;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.nav-logo {
+  min-height: 5vh;
+  height: calc(10px + 5vmin);
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-header {
+  font-size: calc(10px + 2vmin);
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+}
+
+.section-text {
+  font-size: calc(10px + 1vmin);
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+  width: 50%;
+}
+
+.icon-grid {
+  width: 60%;
+  border: none;
+  border-collapse: none;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.card {
+  background-color: #181c24;
+  width: 150px;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", sans-serif;
+}
+
+.card:hover {
+  background-color: #383c44;
+  transition: 0.5s;
+}
+
+.icon-table {
+  width: 50%;
+  border: none;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .App-logo {
@@ -7,15 +121,10 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +133,32 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-footer {
+  background-color: #080c14;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-icon {
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: inherit;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
 }
