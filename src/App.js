@@ -24,6 +24,7 @@ import { TableFive } from "./TableFive";
 import { SectionHeader, SectionText } from "./Section";
 import { Footer } from "./Footer";
 import { IconGrid } from "./IconGrid";
+import { AboutSection } from "./About";
 
 const icons = {
   js: <Card icon={<JavascriptOriginal size={75} />} />,
@@ -50,44 +51,53 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <SectionHeader id="#about" text="About Me" />
-      <SectionText
-        text="Hey there! I'm Alden Cutler, currently a sophomore at Worcester Polytechnic Institute. 
-                        I'm majoring in Computer Science with a minor in data science, and I'm looking for internships during the summer of 2024.
-                        I'm interested in full-stack web development, embedded programming, data science, and machine learning.                          "
-      />
-      <SectionText text="Outside of a professional setting, I'm a big soccer fan and I enjoy biking and hiking." />
+      <div className="about">
+        <div className="text">
+          <SectionHeader id="#about" text="About Me" />
+          <AboutSection />
+        </div>
+        <div className="picture-grid">
+          {/* <img className="pic" src="https://placehold.co/400" alt="" />
+          <img className="pic" src="https://placehold.co/400" alt="" />
+          <img className="pic" src="https://placehold.co/400" alt="" />
+          <img className="pic" src="https://placehold.co/400" alt="" /> */}
+          <img></img>
+        </div>
+      </div>
 
       <SectionHeader id="languages" text="Languages / Skills" />
       <IconGrid icons={icons} />
 
-      <SectionHeader id="projects" text="Projects" />
-      <div className="section-text">
-        <p>
-          I was watching YouTube the other day and came across{" "}
-          <a href="https://www.youtube.com/watch?v=w8yWXqWQYmU">this</a> video
-          about creating a neural network from scratch without using libraries
-          like Tensorflow or Pytorch which inspired me to create my own neural
-          network from scratch.
-        </p>
-        <p>
-          I used the MNIST dataset, which is a dataset of 60,000 images of
-          handwritten digits, to train my neural network to recognize
-          handwritten digits. My attempt only uses three layers, an input layer,
-          one hidden layer, and an output layer.
-        </p>
-        <p>
-          I used the ReLU function as my activation function and the gradient
-          descent algorithm to optimize the weights and biases of my neural
-          network. I was able to achieve an accuracy of 85.5% on the test set,
-          which is pretty good considering my neural network only has one hidden
-          layer. I plan on adding more layers to my neural network in the future
-          to see if I can improve the accuracy. You can find the code for my
-          neural network here:
-        </p>
-        <button className="download-button">
-          <a href="./neural-network.ipynb" download="neural-network.ipynb">Download Neural Network Code (.ipynb)</a>
-        </button>
+      <div>
+        <SectionHeader id="projects" text="Projects" />
+        <div className="section-text">
+          <p>
+            I was watching YouTube the other day and came across{" "}
+            <a href="https://www.youtube.com/watch?v=w8yWXqWQYmU">this</a> video
+            about creating a neural network from scratch without using libraries
+            like Tensorflow or Pytorch which inspired me to create my own. I
+            used the MNIST dataset, which is a dataset of 60,000 images of
+            handwritten digits, to train my neural network to recognize
+            handwritten digits.
+          </p>
+          <p>
+            My attempt only uses three layers, an input layer, one hidden layer,
+            and an output layer.
+          </p>
+          <p>
+            I used the ReLU function as my activation function and the gradient
+            descent algorithm to optimize the weights and biases of my neural
+            network. The hidden layer uses forward and backwards propogation. I
+            was able to achieve an accuracy of 85.5% on the test set, which is
+            pretty good considering my neural network only has one hidden layer.
+            I plan on adding more layers to my neural network in the future to
+            see if I can improve the accuracy. You can find the code for my
+            neural network here:
+          </p>
+          <button className="download-button">
+            <a href="">Download Neural Network Code (.ipynb)</a>
+          </button>
+        </div>
       </div>
 
       <SectionHeader id="contact" text="Contact" />

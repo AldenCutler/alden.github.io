@@ -18,7 +18,7 @@
 
 
 .navbar {
-  background-color: #282c34;
+  background-color: #202530;
   width: 100%;
   min-height: 5vh;
   display: flex;
@@ -59,13 +59,38 @@ a {
   font-size: calc(10px + 2vmin);
   font-family: "Open Sans", sans-serif;
   padding: 1rem;
+  padding-top: 10rem;
+  /* width: 50%; */
 }
 
 .section-text {
   font-size: calc(10px + 1vmin);
   font-family: "Open Sans", sans-serif;
   padding: 1rem;
-  width: 50%;
+  /* width: 50%; */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.picture-grid {
+  width: 100%;
+  padding: 1rem;
+  /* padding-top: 5rem; */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 400px)
+
 }
 
 .icon-grid {
@@ -76,6 +101,7 @@ a {
   margin: 0 auto;
   display: grid;
   justify-items: center;
+  align-items: center;
   grid-gap: 10px;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 200px);
