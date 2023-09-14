@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import AC from "./AC.svg";
 
 export function NavItem({ text, id }) {
   return (
@@ -10,7 +10,9 @@ export function NavItem({ text, id }) {
 
 export function Logo() {
   return (
-      <img src={logo} className='nav-logo'></img>
+    <a href="/">
+      <img src={AC} className='nav-logo' color="white"></img>
+    </a>
   );
 }
 

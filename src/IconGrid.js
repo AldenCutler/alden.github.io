@@ -1,23 +1,59 @@
+import { motion } from "framer-motion";
+
 export function IconGrid({ icons }) {
   return (
     <div className="icon-grid">
-      <div>{icons.html}</div>
-      <div>{icons.css}</div>
-      <div>{icons.js}</div>
-      <div>{icons.node}</div>
-      <div>{icons.bootstrap}</div>
-      <div>{icons.c}</div>
-      <div>{icons.cpp}</div>
-      <div>{icons.java}</div>
-      <div>{icons.linux}</div>
-      <div>{icons.bash}</div>
-      <div>{icons.python}</div>
-      <div>{icons.jupyter}</div>
-      <div>{icons.numpy}</div>
-      <div>{icons.pandas}</div>
-      <div>{icons.r}</div>
-      <div>{icons.git}</div>
-      <div>{icons.react}</div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.html}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.css}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.js}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.node}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.bootstrap}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.c}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.cpp}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.java}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.linux}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.bash}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.python}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.jupyter}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.numpy}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.pandas}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.r}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.git}
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {icons.react}
+      </motion.div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export function SectionHeader({ text, id }) {
-  return (
-    <div id={id} className="section-header">
+ return (
+    <div className="section-header" id={id}>
       <h2>{text}</h2>
     </div>
   );
